@@ -20,7 +20,7 @@ resource "azurerm_resource_group" "tfstate" {
 
 resource "azurerm_storage_account" "tfstate" {
   // Azure resource names can be at most 24 characters
-  name                            = substr("mlopstest", 0, 24)
+  name                            = substr("dimlopstest", 0, 24)
   resource_group_name             = azurerm_resource_group.tfstate.name
   location                        = azurerm_resource_group.tfstate.location
   account_tier                    = "Standard"

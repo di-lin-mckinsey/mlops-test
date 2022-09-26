@@ -18,7 +18,7 @@ terraform {
   //
   backend "azurerm" {
     resource_group_name  = "mlopstest"
-    storage_account_name = "mlopstest"
+    storage_account_name = "dimlopstest"
     container_name       = "cicd-setup-tfstate"
     key                  = "cicd-setup.terraform.tfstate"
   }
